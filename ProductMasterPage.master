@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ProductMasterPage.master.cs" Inherits="ProductMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div id="templatemo_container">
+        <div id="templatemo_header">
+            <div id="templatemo_title">
+                <div id="templatemo_sitetitle">
+                    Embroidery<span></span></div>
+            </div>
+            <br />
+            <br />
+            <div id="templatemo_login">
+                <form method="get" action="#">
+                <%--<label>
+                    Search:</label><input class="inputfield" name="keyword" type="text" id="keyword" />
+                <input class="button" type="submit" name="Search" value="Search" />--%>
+                </form>
+            </div>
+        </div>
+        <div id="wowslider-container1">
+            <div class="ws_images">
+                <ul>
+                    <li>
+                        <img src="data1/images/1.jpg" alt="1" title="1" id="wows1_0" /></li>
+                    <li>
+                        <img src="data1/images/2.jpg" alt="2" title="2" id="wows1_1" /></li>
+                    <li>
+                        <img src="data1/images/3.jpg" alt="3" title="3" id="wows1_2" /></li>
+                    <li>
+                        <img src="data1/images/4.jpg" alt="4" title="4" id="wows1_3" /></li>
+                </ul>
+            </div>
+            <div class="ws_bullets">
+                <div>
+                    <a href="#" title="1">
+                        <img src="data1/tooltips/1.jpg" alt="1" />1</a> <a href="#" title="2">
+                            <img src="data1/tooltips/2.jpg" alt="2" />2</a> <a href="#" title="3">
+                                <img src="data1/tooltips/3.jpg" alt="3" />3</a> <a href="#" title="4">
+                                    <img src="data1/tooltips/4.jpg" alt="4" />4</a>
+                </div>
+            </div>
+            <a class="wsl" href="http://wowslider.com">jQuery Slider Scroll by WOWSlider.com v3.1</a>
+            <div class="ws_shadow">
+            </div>
+        </div>
+        <script type="text/javascript" src="engine1/wowslider.js"></script>
+        <script type="text/javascript" src="engine1/script.js"></script>
+        <div id="templatemo_menu">
+            <ul>
+                <li><a href="PurchaseHome.aspx" class="current"> <asp:Image ID="Image1" runat="server" ImageUrl="~/images/home.ico" Height=15 Width=15 /> Home</a></li>
+                <li><a href="Change_password.aspx">Change Password</a></li>
+                <li><a href="PurchaseProfile.aspx">Profile</a></li>
+                <li><a href="ViewPattern.aspx">View Product</a></li>
+                <li><a href="CustomerOrder.aspx">Order Status</a></li>
+                
+                <li><a href="Home.aspx" class="lastmenu">Logout</a></li>
+            </ul>
+        </div>
+        <div id="templatemo_content">
+            <div id="templatemo_left_column">
+            
+                <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+           
+            <div id="templatemo_right_column">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <br />
+        <br />
+    </div>
+        </div>
+         <br /><br />
+        <div id="templatemo_footer">
+            <a href="#">Home</a> | <a href="#">Registration</a> | <a href="#">Login</a> | <a href="#">
+                Produtes</a> | <a href="#">About Us</a> | <a href="#">Contact</a><br />
+            Copyright © 2013-2014 | <a href="" target="_parent">Developed</a> by DG Private LMT.<a href="" target="_parent">
+            </a>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
